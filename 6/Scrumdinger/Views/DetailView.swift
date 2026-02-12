@@ -5,9 +5,9 @@
 import SwiftUI
 
 struct DetailView: View {
-    //convert the scrum constant to a variable binding.
+    /// convert the scrum constant to a variable binding.
     //let scrum: DailyScrum
-    //Using a binding ensures that DetailView renders again when the user’s interaction modifies scrum.
+    /// Using a binding ensures that DetailView renders again when the user’s interaction modifies scrum.
     @Binding var scrum: DailyScrum
     
     @State private var editingScrum: DailyScrum = DailyScrum.emptyScrum
@@ -53,8 +53,8 @@ struct DetailView: View {
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationStack {
-                //Update the DetailEditView initializer to include a binding to editingScrum.
-                //Changes that a user makes to scrum in the edit view are shared with the editingScrum property in the detail view.
+                /// Update the DetailEditView initializer to include a binding to editingScrum.
+                /// Changes that a user makes to scrum in the edit view are shared with the editingScrum property in the detail view.
                 DetailEditView(scrum: $editingScrum)
                     .navigationTitle(scrum.title)
                     .toolbar {

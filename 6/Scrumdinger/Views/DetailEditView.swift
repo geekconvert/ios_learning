@@ -5,8 +5,8 @@
 import SwiftUI
 
 struct DetailEditView: View {
-    //The detail screen needs to update in response to changes made in the edit screen, so the detail screen shares a source of truth with the edit screen. You’ll convert the edit screen’s state property to a binding here, and supply the source of truth from the detail screen
-    //scrum is now an initialization parameter, so you need to remove the private attribute and DailyScrum initialization.
+    /// The detail screen needs to update in response to changes made in the edit screen, so the detail screen shares a source of truth with the edit screen. You’ll convert the edit screen’s state property to a binding here, and supply the source of truth from the detail screen
+    /// scrum is now an initialization parameter, so you need to remove the private attribute and DailyScrum initialization.
     @Binding var scrum: DailyScrum
 //    @State private var scrum = DailyScrum.emptyScrum
     @State private var attendeeName = ""
@@ -24,7 +24,7 @@ struct DetailEditView: View {
                     Text("\(scrum.lengthInMinutes) minutes")
                         .accessibilityHidden(true)
                 }
-                //The theme picker passes changes to the theme selection back to the scrum.theme property in the edit view.
+                /// The theme picker passes changes to the theme selection back to the scrum.theme property in the edit view.
                 ThemePicker(selection: $scrum.theme)
             }
             Section(header: Text("Attendees")) {
