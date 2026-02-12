@@ -31,7 +31,7 @@ struct DailyScrum: Identifiable {
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
         self.id = id
         self.title = title
-        //map(_:) creates a new collection by iterating over and applying a transformation to each element in an existing collection.
+        ///map(_:) creates a new collection by iterating over and applying a transformation to each element in an existing collection.
         self.attendees = attendees.map{
             Attendee(name: $0)
         }

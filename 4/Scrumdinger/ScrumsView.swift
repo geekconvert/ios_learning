@@ -8,17 +8,18 @@ struct ScrumsView: View {
     let scrums: [DailyScrum]
     
     var body: some View {
-        //A NavigationStack container view allows you to traverse a stack of views in a hierarchy.
-        //The list of scrums acts as the root view and is always present. Selecting a navigation link from the list adds a scrum detail view to the stack so that it covers the list. Navigating back removes the detail view and reveals the list again. The system disables backward navigation controls when the list of scrums is the only view in the stack.
-        //Add a NavigationLink, passing Text(scrum.title) as the destination in the initializer.
-        //The destination presents a single view in the navigation hierarchy when a user interacts with the element. Each row pushes to an individual destination.
+        /// A NavigationStack container view allows you to traverse a stack of views in a hierarchy.
+        /// The list of scrums acts as the root view and is always present. Selecting a navigation link from the list adds a scrum detail view to the stack so that it covers the list. Navigating back removes the detail view and reveals the list again. The system disables backward navigation controls when the list of scrums is the only view in the stack.
 //        NavigationStack{
 //            List(scrums) { scrum in
+                /// Add a NavigationLink, passing Text(scrum.title) as the destination in the initializer.
+                /// The destination presents a single view in the navigation hierarchy when a user interacts with the element. Each row pushes to an individual destination.
 //                NavigationLink(destination: Text(scrum.title)){
 //                    CardView(scrum: scrum)
 //                }
 //                .listRowBackground(scrum.theme.mainColor)
 //            }
+        ///Notice that you add the .navigationTitle modifier to the List. The child view can affect the appearance of the NavigationStack using modifiers.
 //            .navigationTitle("Daily Scrums")
 //            .toolbar(){
 //                Button(action: {}){
