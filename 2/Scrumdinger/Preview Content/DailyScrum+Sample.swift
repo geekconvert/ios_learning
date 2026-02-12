@@ -6,12 +6,12 @@
 //
 
 
-//Preview Content is an Xcode folder where you can put development assets to use while developing and debugging your project. Assets in this folder aren’t shipped to users in the final version of your app.
+////Preview Content is an Xcode folder where you can put development assets to use while developing and debugging your project. Assets in this folder aren’t shipped to users in the final version of your app.
 
 import Foundation
 import ThemeKit
 
-//Swift extensions add new functionality to an existing type.
+//// Swift extensions add new functionality to an existing type.
 extension DailyScrum{
     static let sampleData: [DailyScrum] =
     [
@@ -20,5 +20,3 @@ extension DailyScrum{
         DailyScrum(title: "Web Dev", attendees: ["Chella", "Chris", "Christina", "Eden", "Karla", "Lindsey", "Aga", "Chad", "Jenn", "Sarah"], lengthInMinutes: 5, theme: .poppy)
     ]
 }
-
-//Preview Content is an Xcode folder where you can put development assets to use while developing and debugging your project. Assets in this folder aren’t shipped to users in the final version of your app.

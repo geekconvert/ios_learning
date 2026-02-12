@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import ThemeKit /*You import ThemeKit so that you can use the Theme type in the structure definition in the next step.*/
+import ThemeKit ///You import ThemeKit so that you can use the Theme type in the structure definition. Importing a package gives you access to the types defined in that package.
 
 struct DailyScrum{
     var title: String
